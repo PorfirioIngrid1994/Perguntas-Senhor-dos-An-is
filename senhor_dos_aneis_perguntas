@@ -1,0 +1,24 @@
+perguntas = ['Onde a senhora Galadriel e Celeborn encontram a companhia do anel? ',
+             'Qual é o nome do irmão do Boromir? ',
+             'Onde moram os hobbits? ',
+             'Qual é o nome da espada que Bilbo encontra em Senhor dos Anéis? ',
+             'Qual o nome do ser com que Gandalf batalhou e caiu com ele no abismo? ']
+
+respostas = ['Lothlorien',
+             'Faramir',
+             'Condado',
+             'Ferroada',
+             'Balrog']
+print('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+print('Bem-vindo ao jogo de perguntas e respostas de Senhor dos Anéis!')
+print('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+
+pontos = 0
+
+for i in range(len(perguntas)):
+    resposta_jogador = input(perguntas[i])
+    if resposta_jogador == respostas[i]:
+        print('Uhuuuul, acertou!')
+        pontos += 1
+    else:
+        print('Huuuum, pensa um pouquinho mais')
